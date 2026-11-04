@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>arXiv Triage</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="popup">
+      <header class="row header">
+        <h1>arXiv Triage</h1>
+        <label class="switch" title="Switch the overlay on or off">
+          <input id="enabled" type="checkbox" aria-label="Overlay on" />
+          <span></span>
+        </label>
+      </header>
+      <p class="muted shortcut">Shortcut: <kbd id="shortcut">Alt+Shift+T</kbd></p>
+      <div id="access"></div>
+
+      <div class="row">
+        <select id="mode" aria-label="Filter by">
+          <option value="threshold">Threshold</option>
+          <option value="topPercent">Top %</option>
+        </select>
+        <input id="intensity" type="range" aria-label="Filter intensity" />
+        <output id="intensity-value"></output>
+      </div>
+      <label class="row"><input id="sort" type="checkbox" /> Sort by relevance within sections</label>
+      <label class="row" id="ai-row" hidden
+        ><input id="llmEnabled" type="checkbox" /> AI second opinion (<span id="ai-provider"></span>)</label
+      >
+
+      <p class="row footer"><a id="options" href="#">All settings…</a></p>
+    </main>
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>

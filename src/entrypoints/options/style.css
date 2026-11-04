@@ -1,0 +1,241 @@
+@import '../../ui/pages/pages.css';
+
+.options {
+  max-width: 44em;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+}
+
+.options .row > label:first-child {
+  min-width: 14em;
+}
+
+h3 {
+  font-size: 13px;
+  margin: 1.2em 0 0.3em;
+}
+
+.setup {
+  padding: 0 0 0.5em;
+}
+
+.setup:target {
+  padding: 0.2em 1em 1em;
+  margin: 0 -1em;
+  background: var(--axt-panel);
+  border-left: 3px solid var(--axt-red);
+}
+
+#inspireProfile {
+  flex: 1;
+}
+
+label.stacked {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.3em;
+  margin: 0.6em 0;
+}
+
+textarea,
+input[type='text'],
+input[type='number'] {
+  padding: 4px 6px;
+  border: 1px solid var(--axt-border);
+  border-radius: 3px;
+  background: var(--axt-bg);
+  color: var(--axt-text);
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  padding: 3px 10px;
+  border: 1px solid var(--axt-border);
+  border-radius: 3px;
+  background: var(--axt-panel);
+  color: var(--axt-text);
+}
+
+button.primary {
+  border-color: var(--axt-red);
+  background: var(--axt-red);
+  color: #fff;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: progress;
+}
+
+.weights {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16em, 1fr));
+  gap: 0.4em 1.2em;
+  margin: 0.6em 0;
+}
+
+.weights label {
+  justify-content: space-between;
+}
+
+.weights input {
+  width: 5em;
+}
+
+details summary {
+  cursor: pointer;
+  margin-top: 0.8em;
+}
+
+[role='status'].error {
+  color: #b31b1b;
+}
+
+#apiKey {
+  flex: 1;
+  font-family: ui-monospace, monospace;
+}
+
+fieldset.trust {
+  border: 0;
+  margin: 0.4em 0;
+  padding: 0;
+}
+
+fieldset.trust legend {
+  padding: 0;
+  margin-bottom: 0.2em;
+}
+
+fieldset.trust .row {
+  margin: 0.25em 0 0.25em 1em;
+}
+
+#llmWeight {
+  width: 10em;
+}
+
+#llmModel,
+#llmBaseUrl {
+  flex: 1;
+  font-family: ui-monospace, monospace;
+}
+
+#price-row input {
+  width: 6em;
+}
+
+.small {
+  font-size: 12px;
+}
+
+.weights-table {
+  border-collapse: collapse;
+  margin: 0.5em 0;
+  font-variant-numeric: tabular-nums;
+}
+
+.weights-table th,
+.weights-table td {
+  padding: 0.2em 1.2em 0.2em 0;
+  text-align: left;
+  border-bottom: 1px solid var(--axt-border);
+}
+
+.weights-table th {
+  font-weight: normal;
+  color: var(--axt-muted);
+}
+
+.weights-table td:not(:first-child) {
+  text-align: right;
+}
+
+.weights-table .moved {
+  font-weight: bold;
+}
+
+.people {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.people > li {
+  padding: 0.3em 0;
+  border-bottom: 1px solid var(--axt-border);
+}
+
+.people > li.empty {
+  color: var(--axt-muted);
+  border: 0;
+}
+
+.person-line {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+}
+
+.person-summary {
+  flex: 1;
+}
+
+.person-summary .name {
+  font-weight: bold;
+}
+
+.person-summary .linked {
+  margin-left: 0.6em;
+  padding: 0 4px;
+  border: 1px solid var(--axt-border);
+  border-radius: 3px;
+  color: var(--axt-muted);
+  font-size: 12px;
+}
+
+.person-editor {
+  margin: 0.5em 0 0.4em 1em;
+  padding: 0.2em 0.9em 0.4em;
+  border-left: 3px solid var(--axt-border);
+}
+
+.person-editor label.stacked input {
+  max-width: 28em;
+}
+
+.inspire-candidates {
+  list-style: none;
+  margin: 0.3em 0;
+  padding: 0;
+}
+
+.inspire-candidates li {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+  padding: 0.15em 0;
+}
+
+#add-name {
+  flex: 1;
+  max-width: 24em;
+}
+
+.toc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3em 1.2em;
+  margin: 0.6em 0 0.4em;
+  font-size: 12px;
+}
+
+button.danger {
+  border-color: var(--axt-red);
+  color: var(--axt-red);
+  background: var(--axt-bg);
+}

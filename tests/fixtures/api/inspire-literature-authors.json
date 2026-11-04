@@ -1,0 +1,87 @@
+{
+  "hits": {
+    "total": 2,
+    "hits": [
+      {
+        "metadata": {
+          "control_number": 2000001,
+          "arxiv_eprints": [
+            {
+              "value": "2401.01234"
+            }
+          ],
+          "authors": [
+            {
+              "full_name": "Doe, Jane",
+              "ids": [
+                {
+                  "schema": "INSPIRE BAI",
+                  "value": "J.Doe.1"
+                },
+                {
+                  "schema": "ORCID",
+                  "value": "0000-0002-1825-0097"
+                }
+              ]
+            },
+            {
+              "full_name": "Smith, Tom"
+            },
+            {
+              "full_name": "Ferreira, Ana",
+              "ids": [
+                {
+                  "schema": "INSPIRE BAI",
+                  "value": "A.Ferreira.1"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "metadata": {
+          "control_number": 2000002,
+          "arxiv_eprints": [
+            {
+              "value": "2402.05678"
+            }
+          ],
+          "authors": [
+            {
+              "full_name": "Chen, Wei",
+              "ids": [
+                {
+                  "schema": "INSPIRE BAI",
+                  "value": "W.Chen.3"
+                }
+              ]
+            },
+            {
+              "full_name": "Zhang, Lin",
+              "ids": [
+                {
+                  "schema": "INSPIRE BAI",
+                  "value": "L.Zhang.12"
+                }
+              ]
+            },
+            {
+              "full_name": "Zhang, Yan",
+              "ids": [
+                {
+                  "schema": "ORCID",
+                  "value": "0000-0003-1415-9265"
+                },
+                {
+                  "schema": "INSPIRE BAI",
+                  "value": "Y.Zhang.40"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

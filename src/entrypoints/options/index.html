@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>arXiv Triage settings</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="options">
+      <h1>arXiv Triage settings</h1>
+      <div id="access"></div>
+      <nav class="toc" aria-label="Sections">
+        <a href="#setup">Your profile</a>
+        <a href="#ai">AI second opinion</a>
+        <a href="#learning">Learning</a>
+        <a href="#display">Display</a>
+        <a href="#people">Authors</a>
+        <a href="#data">Your data</a>
+      </nav>
+
+      <section id="setup" class="setup">
+        <h2>Your profile</h2>
+        <p class="muted">
+          Papers are scored by how close they are to papers you care about and to your interests. Everything below is
+          optional; the scores improve further as you mark papers relevant or not.
+        </p>
+
+        <h3>Your papers</h3>
+        <div class="row">
+          <label for="inspireProfile">INSPIRE profile</label>
+          <input id="inspireProfile" data-setting="inspireProfile" type="text" spellcheck="false"
+            placeholder="https://inspirehep.net/authors/…, a BAI or an ORCID" />
+        </div>
+        <label class="row"><input type="checkbox" data-setting="useReferences" /> Also use the papers your papers cite</label>
+        <div class="row">
+          <button id="seed-inspire" type="button" class="primary">Fetch my papers from INSPIRE</button>
+          <span id="seed-inspire-status" class="muted" role="status"></span>
+        </div>
+
+        <h3>Interests</h3>
+        <label class="stacked" for="interests">What you want to read about (a paragraph or keywords)
+          <textarea id="interests" data-setting="interests" rows="4"
+            placeholder="e.g. precision holography, supersymmetric localization, AdS black holes, …"></textarea>
+        </label>
+        <label class="stacked" for="negativeInterests">Not interested in
+          <textarea id="negativeInterests" data-setting="negativeInterests" rows="2"
+            placeholder="e.g. collider phenomenology, inflationary model building, …"></textarea>
+        </label>
+
+        <h3>More examples</h3>
+        <label class="row"><input type="checkbox" data-setting="useFollowedPapers" /> Use recent papers by the authors you follow</label>
+        <div class="row">
+          <button id="seed-followed" type="button">Fetch followed authors' papers</button>
+          <span id="seed-followed-status" class="muted" role="status"></span>
+        </div>
+        <label class="stacked" for="pastedIds">arXiv IDs of papers you like
+          <textarea id="pastedIds" data-setting="pastedIds" rows="2" spellcheck="false"
+            placeholder="1207.7214, hep-th/9711200, …"></textarea>
+        </label>
+        <div class="row">
+          <button id="seed-pasted" type="button">Load these papers</button>
+          <span id="seed-pasted-status" class="muted" role="status"></span>
+        </div>
+
+        <details>
+          <summary>How much each kind of example counts</summary>
+          <div class="weights">
+            <label>Your papers <input type="number" min="0.05" max="1" step="0.05" data-weight="own" /></label>
+            <label>Papers you cite <input type="number" min="0.05" max="1" step="0.05" data-weight="refs" /></label>
+            <label>Followed authors' papers <input type="number" min="0.05" max="1" step="0.05" data-weight="followed" /></label>
+            <label>Pasted papers <input type="number" min="0.05" max="1" step="0.05" data-weight="pasted" /></label>
+          </div>
+        </details>
+      </section>
+
+      <section id="ai">
+        <h2>AI second opinion (optional)</h2>
+        <p class="muted">
+          A language model can read each day's titles and abstracts and give a second opinion, which the local model
+          learns how far to trust. Use any provider, a model running on your own computer, or none at all: without one,
+          everything runs locally and for free.
+        </p>
+        <div class="row">
+          <label for="llmProvider">Provider</label>
+          <select id="llmProvider"></select>
+        </div>
+        <p id="provider-note" class="muted small"></p>
+        <div class="row" id="baseurl-row">
+          <label for="llmBaseUrl">Server address</label>
+          <input id="llmBaseUrl" type="url" spellcheck="false" />
+        </div>
+        <div class="row" id="key-row">
+          <label for="apiKey">API key</label>
+          <input id="apiKey" type="password" autocomplete="off" spellcheck="false" />
+          <a id="key-link" target="_blank" rel="noopener noreferrer">get a key</a>
+        </div>
+        <div class="row" id="connect-row">
+          <label></label>
+          <button id="connect" type="button" class="primary">Connect</button>
+          <button id="disconnect" type="button">Remove key</button>
+        </div>
+        <p id="key-status" class="muted" role="status"></p>
+        <div id="ai-options">
+          <label class="row"><input type="checkbox" data-setting="llmEnabled" /> Use the second opinion when scoring</label>
+          <div class="row">
+            <label for="llmModel">Model</label>
+            <input id="llmModel" list="llm-models" spellcheck="false" placeholder="pick or type a model id" />
+            <datalist id="llm-models"></datalist>
+          </div>
+          <p class="muted small">A small, fast model is enough: this is a quick yes-or-no reading of each abstract.</p>
+          <fieldset class="trust">
+            <legend>How much to trust it</legend>
+            <label class="row"
+              ><input type="radio" name="llmWeightMode" value="learned" /><span
+                >Learn it from my feedback (now <span id="learned-llm-weight"></span>)</span
+              ></label
+            >
+            <label class="row"
+              ><input type="radio" name="llmWeightMode" value="manual" /> Fixed:
+              <input id="llmWeight" type="range" min="0" max="5" step="0.1" aria-label="Fixed weight of the second opinion" />
+              <output id="llmWeight-value"></output></label
+            >
+          </fieldset>
+          <div class="row" id="price-row">
+            <label>Price, USD per million tokens</label>
+            <label>input <input id="price-input" type="number" min="0" step="0.01" /></label>
+            <label>output <input id="price-output" type="number" min="0" step="0.01" /></label>
+          </div>
+          <p id="llm-cost" class="muted"></p>
+        </div>
+        <p class="muted small">
+          Sent to the provider you choose (nothing, if you choose none or a local server): the titles, authors,
+          categories and abstracts of the papers on listings you open; your interests; the names of authors you follow;
+          the titles of your papers and of up to ten papers you recently marked. Keys stay in this browser: they are not
+          synced, and are left out of exports unless you ask for them.
+        </p>
+      </section>
+
+      <section id="learning">
+        <h2>Learning</h2>
+        <p class="muted">
+          Mark papers ✓ relevant or ✕ not relevant on any listing, or in the daily review at the bottom of the page.
+          Opening a paper, expanding its abstract or following one of its authors also counts, a little.
+        </p>
+        <p id="model-status" role="status"></p>
+        <table id="model-weights" class="weights-table">
+          <thead>
+            <tr><th>Signal</th><th>Starting weight</th><th>Learned weight</th></tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <details>
+          <summary>How much each kind of feedback counts</summary>
+          <div class="weights">
+            <label>✓ / ✕ buttons <input type="number" min="0" max="1" step="0.05" data-signal="explicit" /></label>
+            <label>Following an author <input type="number" min="0" max="1" step="0.05" data-signal="follow" /></label>
+            <label>Opening the PDF or HTML <input type="number" min="0" max="1" step="0.05" data-signal="fullText" /></label>
+            <label>Expanding an abstract <input type="number" min="0" max="1" step="0.05" data-signal="expand" /></label>
+            <label>Shown but ignored <input type="number" min="0" max="1" step="0.01" data-signal="ignored" /></label>
+            <label>Half-life of feedback (days) <input type="number" min="1" max="3650" step="1" data-setting="labelHalfLifeDays" /></label>
+          </div>
+        </details>
+        <div class="row">
+          <button id="reset-learning" type="button">Forget all feedback</button>
+          <span id="reset-learning-status" class="muted" role="status"></span>
+        </div>
+      </section>
+
+      <section id="display">
+      <h2>Display</h2>
+      <div class="row">
+        <label for="intensityMode">Expand abstracts</label>
+        <select id="intensityMode" data-setting="intensityMode">
+          <option value="threshold">above a relevance threshold</option>
+          <option value="topPercent">for roughly the top N% of papers</option>
+        </select>
+      </div>
+      <div class="row">
+        <label for="threshold">Threshold (0 to 1)</label>
+        <input id="threshold" type="number" min="0" max="1" step="0.05" data-setting="threshold" />
+      </div>
+      <div class="row">
+        <label for="topPercent">Top N%</label>
+        <input id="topPercent" type="number" min="1" max="100" step="1" data-setting="topPercent" />
+      </div>
+      <p class="muted small">
+        The two are linked on every listing: the summary bar shows which threshold expands the top N% of that day's
+        papers, and what share of papers a threshold expands.
+      </p>
+      <div class="row">
+        <label for="crossLists">Cross-lists</label>
+        <select id="crossLists" data-setting="crossLists"></select>
+      </div>
+      <div class="row">
+        <label for="replacements">Replacements</label>
+        <select id="replacements" data-setting="replacements"></select>
+      </div>
+      <div class="row">
+        <label for="blockedMode">Papers by blocked authors</label>
+        <select id="blockedMode" data-setting="blockedMode">
+          <option value="hide">hide entirely</option>
+          <option value="collapse">collapse the abstract</option>
+        </select>
+      </div>
+      <label class="row"
+        ><input type="checkbox" data-setting="sortByScore" /> Sort papers by relevance within each section</label
+      >
+      <label class="row"
+        ><input type="checkbox" data-setting="insertAbstracts" /> On pages without abstracts (recent, past week), show
+        fetched abstracts of relevant papers</label
+      >
+      <div class="row">
+        <label>Switch the overlay on and off</label>
+        <kbd id="shortcut"></kbd>
+        <button id="change-shortcut" type="button">Change</button>
+      </div>
+      <p id="shortcut-help" class="muted small" hidden>
+        In Firefox: open Add-ons and themes, click the gear icon, then Manage Extension Shortcuts.
+      </p>
+      </section>
+
+      <section id="people">
+        <h2>Authors</h2>
+        <p class="muted">
+          Papers by authors you follow always open expanded and get a ★; papers by authors you block are hidden. You can
+          also follow or block from the menu that opens when you hover over an author's name on a listing. Names match
+          by surname and initials: add other spellings as aliases, and link an INSPIRE profile to tell namesakes apart.
+        </p>
+        <div id="add-person" class="row">
+          <input id="add-name" spellcheck="false" placeholder="Name, e.g. Jane Doe" aria-label="Author's name" />
+          <button type="button" data-list="followed" class="primary">Follow</button>
+          <button type="button" data-list="blocked">Block</button>
+        </div>
+        <p id="add-status" class="muted" role="status"></p>
+        <h3>Followed (<span id="followed-count">0</span>)</h3>
+        <ul id="followed" class="people"></ul>
+        <h3>Blocked (<span id="blocked-count">0</span>)</h3>
+        <ul id="blocked" class="people"></ul>
+      </section>
+
+      <section id="data">
+        <h2>Your data</h2>
+        <p class="muted">
+          Everything stays in this browser; settings and authors also sync through your browser account. Export it to
+          back it up or to move to another browser. Caches (paper embeddings, fetched abstracts, AI answers) are not
+          exported: they rebuild by themselves.
+        </p>
+        <div class="row">
+          <button id="export" type="button" class="primary">Export to a file</button>
+          <label><input id="export-keys" type="checkbox" /> include API keys</label>
+        </div>
+        <div class="row">
+          <label for="import-file">Import from a file</label>
+          <input id="import-file" type="file" accept=".json,application/json" />
+        </div>
+        <p id="data-status" class="muted" role="status"></p>
+        <div class="row">
+          <button id="reset-all" type="button" class="danger">Reset everything</button>
+          <span class="muted small">Deletes settings, authors, feedback, seeds, keys and caches. The downloaded relevance
+            model is kept.</span>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>

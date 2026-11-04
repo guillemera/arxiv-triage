@@ -1,0 +1,285 @@
+/* arXiv Triage overlay. Everything is scoped to axt- classes and removed when the overlay is off. */
+
+/* Our buttons reset their styles with `all: unset`, which would otherwise override [hidden]. */
+[data-axt][hidden] {
+  display: none !important;
+}
+
+.axt-controls {
+  font-size: 12px;
+  font-weight: normal;
+  white-space: nowrap;
+  margin-left: 0.45em;
+}
+
+.axt-badge {
+  display: inline-block;
+  min-width: 2.7em;
+  padding: 0 0.45em;
+  border-radius: 0.8em;
+  font: bold 11px/1.6 'Lucida Grande', helvetica, arial, verdana, sans-serif;
+  text-align: center;
+  vertical-align: 0.15em;
+  cursor: help;
+}
+
+.axt-badge.axt-pending {
+  background: transparent;
+  color: #888;
+  box-shadow: inset 0 0 0 1px #ccc;
+}
+
+.axt-fb {
+  all: unset;
+  display: inline-block;
+  width: 1.55em;
+  margin-left: 0.25em;
+  border-radius: 3px;
+  box-shadow: inset 0 0 0 1px #d6d6d6;
+  color: #9a9a9a;
+  font: 11px/1.6 'Lucida Grande', helvetica, arial, verdana, sans-serif;
+  text-align: center;
+  vertical-align: 0.15em;
+  cursor: pointer;
+}
+
+.axt-badge + .axt-fb {
+  margin-left: 0.45em;
+}
+
+.axt-fb:hover {
+  color: #333;
+  box-shadow: inset 0 0 0 1px #999;
+}
+
+.axt-fb:focus-visible {
+  outline: 2px solid #b31b1b;
+  outline-offset: 1px;
+}
+
+.axt-fb-yes[aria-pressed='true'] {
+  background: rgb(46, 139, 62);
+  box-shadow: none;
+  color: #fff;
+}
+
+.axt-fb-no[aria-pressed='true'] {
+  background: #b31b1b;
+  box-shadow: none;
+  color: #fff;
+}
+
+#dlpage .axt-flash {
+  background: #fff8e5;
+  transition: background 0.6s;
+}
+
+#dlpage .axt-review {
+  margin: 1.5em 0 1em;
+  padding: 0.45em 0.75em;
+  border: 1px solid #ddd;
+  border-left: 3px solid #b31b1b;
+  background: #fafafa;
+  font-size: 90%;
+}
+
+#dlpage .axt-review > summary {
+  cursor: pointer;
+  font-weight: bold;
+  color: #b31b1b;
+}
+
+#dlpage .axt-review h4 {
+  margin: 1em 0 0.3em;
+  font-size: 100%;
+}
+
+#dlpage .axt-review table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#dlpage .axt-review td {
+  padding: 0.15em 0.4em 0.15em 0;
+  vertical-align: top;
+  border-top: 1px solid #eee;
+}
+
+#dlpage .axt-review td:first-child {
+  width: 3.4em;
+}
+
+#dlpage .axt-review .axt-review-buttons {
+  width: 4.2em;
+  white-space: nowrap;
+}
+
+#dlpage .axt-review .axt-review-buttons .axt-fb {
+  margin-left: 0.2em;
+}
+
+#dlpage .axt-review .axt-review-state {
+  width: 5em;
+  text-align: right;
+}
+
+#dlpage .axt-review .axt-muted {
+  color: #666;
+}
+
+.axt-link {
+  all: unset;
+  cursor: pointer;
+  color: LinkText;
+  font-size: 12px;
+  font-weight: normal;
+  margin-left: 0.6em;
+}
+
+.axt-link:hover {
+  text-decoration: underline;
+}
+
+.axt-link:focus-visible,
+.axt-menu button:focus-visible,
+.axt-menu a:focus-visible {
+  outline: 2px solid #b31b1b;
+  outline-offset: 1px;
+}
+
+#dlpage dd.axt-collapsed > .meta > p.mathjax,
+#dlpage dd.axt-collapsed .axt-abstract {
+  display: none !important;
+}
+
+#dlpage .axt-hidden {
+  display: none !important;
+}
+
+.axt-star {
+  color: #b31b1b;
+  margin-left: 0.12em;
+  font-size: 90%;
+}
+
+.axt-blocked-mark {
+  color: #999;
+  margin-left: 0.12em;
+  font-size: 85%;
+}
+
+#dlpage .axt-note {
+  font-size: 90%;
+  color: #555;
+  margin: 0.1em 0 0.8em;
+}
+
+#dlpage .axt-note .axt-link {
+  font-size: inherit;
+  margin-left: 0.3em;
+}
+
+#dlpage .axt-summary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35em 1.1em;
+  margin: 0.9em 0;
+  padding: 0.45em 0.75em;
+  border: 1px solid #ddd;
+  border-left: 3px solid #b31b1b;
+  background: #fafafa;
+  font-size: 90%;
+  line-height: 1.5;
+}
+
+#dlpage .axt-summary .axt-brand {
+  font-weight: bold;
+  color: #b31b1b;
+}
+
+#dlpage .axt-summary label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+  white-space: nowrap;
+}
+
+#dlpage .axt-summary select {
+  font: inherit;
+  padding: 0 0.1em;
+}
+
+#dlpage .axt-summary input[type='range'] {
+  width: 8em;
+  margin: 0;
+  accent-color: #b31b1b;
+}
+
+#dlpage .axt-summary output {
+  font-variant-numeric: tabular-nums;
+  min-width: 2.6em;
+}
+
+#dlpage .axt-summary .axt-muted {
+  color: #666;
+}
+
+#dlpage .axt-summary .axt-link {
+  font-size: inherit;
+  margin-left: 0;
+}
+
+#dlpage .axt-summary .axt-off {
+  margin-left: auto;
+}
+
+.axt-menu {
+  position: absolute;
+  z-index: 2147483000;
+  min-width: 14em;
+  padding: 0.3em 0;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  font: 13px/1.45 'Lucida Grande', helvetica, arial, verdana, sans-serif;
+  color: #222;
+}
+
+.axt-menu > .axt-menu-name {
+  padding: 0.2em 0.9em 0.35em;
+  font-weight: bold;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 0.2em;
+}
+
+.axt-menu > button,
+.axt-menu > a {
+  all: unset;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.2em 0.9em;
+  cursor: pointer;
+  color: #222;
+}
+
+.axt-menu > button:hover,
+.axt-menu > a:hover {
+  background: #f1f1f1;
+}
+
+.axt-warning {
+  position: fixed;
+  right: 12px;
+  bottom: 12px;
+  z-index: 2147483000;
+  padding: 0.3em 0.7em;
+  border: 1px solid #e0b252;
+  border-radius: 3px;
+  background: #fff8e5;
+  color: #6b4a00;
+  font: 12px/1.4 'Lucida Grande', helvetica, arial, verdana, sans-serif;
+  cursor: pointer;
+}

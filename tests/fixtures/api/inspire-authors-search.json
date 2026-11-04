@@ -1,0 +1,79 @@
+{
+  "hits": {
+    "total": 3,
+    "hits": [
+      {
+        "metadata": {
+          "control_number": 1000001,
+          "name": {
+            "value": "Doe, Jane",
+            "preferred_name": "Jane Doe"
+          },
+          "ids": [
+            {
+              "schema": "INSPIRE BAI",
+              "value": "J.Doe.1"
+            },
+            {
+              "schema": "ORCID",
+              "value": "0000-0002-1825-0097"
+            }
+          ],
+          "positions": [
+            {
+              "institution": "Example U.",
+              "current": true,
+              "rank": "SENIOR",
+              "start_date": "2019"
+            },
+            {
+              "institution": "Sample Inst. Theor. Phys.",
+              "current": false,
+              "rank": "POSTDOC",
+              "start_date": "2015",
+              "end_date": "2019"
+            }
+          ]
+        }
+      },
+      {
+        "metadata": {
+          "control_number": 1000002,
+          "name": {
+            "value": "Doe, Jane A.",
+            "preferred_name": "Jane A. Doe"
+          },
+          "ids": [
+            {
+              "schema": "INSPIRE BAI",
+              "value": "J.A.Doe.1"
+            }
+          ],
+          "positions": [
+            {
+              "institution": "Placeholder Coll.",
+              "current": true,
+              "rank": "PHD",
+              "start_date": "2023"
+            }
+          ]
+        }
+      },
+      {
+        "metadata": {
+          "control_number": 1000003,
+          "name": {
+            "value": "Doe, J."
+          },
+          "ids": [
+            {
+              "schema": "INSPIRE BAI",
+              "value": "J.Doe.2"
+            }
+          ],
+          "positions": []
+        }
+      }
+    ]
+  }
+}

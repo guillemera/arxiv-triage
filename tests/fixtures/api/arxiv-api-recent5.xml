@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/RDE4z6/r3R509IrkOXAfMLSosAc</id>
+  <title>arXiv Query: search_query=&amp;id_list=2610.28531,2610.28516,2610.28319,2610.28183,2610.28165&amp;start=0&amp;max_results=5</title>
+  <updated>2026-10-21T14:55:18Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=&amp;start=0&amp;max_results=5&amp;id_list=2610.28531,2610.28516,2610.28319,2610.28183,2610.28165" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>5</opensearch:itemsPerPage>
+  <opensearch:totalResults>5</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2610.28319v1</id>
+    <title>Causality violation in the holographic approach to N=4 SYM theory at finite 't Hooft coupling</title>
+    <updated>2026-10-20T14:55:28Z</updated>
+    <link href="https://arxiv.org/abs/2610.28319v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.28319v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In the AdS/CFT correspondence, correlation functions of the energy-momentum tensor in N=4 supersymmetric Yang-Mills theory at large but finite 't Hooft coupling can be studied using higher-derivative corrections to supergravity. We show that the commonly used holographic prescription for correlation functions which is obtained by truncating the equations of motion at order $(α')^3$ implies that the thermal equilibrium state of N=4 SYM theory in the planar limit is dynamically unstable at arbitrarily large finite 't Hooft coupling. The instability is a reflection of the unphysical causality violation brought about by treating perturbatively-derived equations as if they were non-perturbative, analogous to the instability of AdS black branes in five-dimensional Gauss-Bonnet gravity. While other holographic prescriptions for treating the $O(α'^3)$ corrections to supergravity may alleviate the pathology introduced by the truncation, the validity regime of the results obtained by any prescription at $O(α'^3)$ must be limited to the strict perturbative treatment of the $O(α'^3)$ effects on N=4 SYM observables.</summary>
+    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-20T14:55:28Z</published>
+    <arxiv:comment>34 pages</arxiv:comment>
+    <arxiv:primary_category term="hep-th"/>
+    <author>
+      <name>Alex Buchel</name>
+    </author>
+    <author>
+      <name>Pavel Kovtun</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.28183v1</id>
+    <title>Finite Spectral Recurrences for Loop Integrals in de Sitter and Anti-de Sitter Space</title>
+    <updated>2026-10-20T13:21:07Z</updated>
+    <link href="https://arxiv.org/abs/2610.28183v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.28183v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We introduce a method that does for loop integrals in de Sitter and anti-de Sitter space what integration-by-parts identities do in flat space. A local, coordinate-free propagator algebra common to both geometries yields exact finite-difference equations in spectral labels; with external points they become differential-difference equations, and at the AdS boundary recover known Witten-diagram relations. Acting line by line, they apply in principle to any diagram. We solve them for the two-loop watermelon, isolating its ultraviolet poles, and for one-loop two- and four-point functions.</summary>
+    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="gr-qc" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-20T13:21:07Z</published>
+    <arxiv:comment>1 figure</arxiv:comment>
+    <arxiv:primary_category term="hep-th"/>
+    <author>
+      <name>Bruce A. Bassett</name>
+    </author>
+    <author>
+      <name>Sergio Cacciatori</name>
+    </author>
+    <author>
+      <name>Ugo Moschella</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.28165v1</id>
+    <title>Surface defects on lens space and transfer matrices</title>
+    <updated>2026-10-20T13:08:14Z</updated>
+    <link href="https://arxiv.org/abs/2610.28165v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.28165v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We study surface defects in four-dimensional $\mathcal{N}=2$ theories of class $\mathcal{S}$ and $\mathcal{N}=1$ theories of class $\mathcal{S}_k$ placed on $L(r,1)\times S^1$. The lens space index depends on the fugacities $p$ and $q$, and the effect of the defects on it is captured by difference operators acting on the fugacities and holonomies of flavor symmetries. For theories of type $A_1$ we determine in closed form the difference operators for the basic defects, labeled by $p^r$, $q^r$ and $pq$, and show that for odd $r$ there exist additional elementary defects, whose operators shift the holonomy by one half modulo $r$. All the operators commute, and the elementary operators generate the others. For even $r$ the same holds once the holonomy is extended to a twisted sector. We show that the elementary operators are traces of $L$-operators whose entries generate a Sklyanin algebra, with nome $q^r$ and shift $pq$. The lens space enters only through the parameters of the algebra and through its representation, which is realized on a doubled holonomy label. The $p$- and $q$-type algebras form a lens space version of the elliptic modular double. For class $\mathcal{S}_k$ theories we propose, and test in several ways, that the defect operators are transfer matrices of inhomogeneous spin chains built from these $L$-operators. Throughout, we use the TQFT structure of the lens space index, which follows from S-duality, both to fix and to check the operators.</summary>
+    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.QA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="nlin.SI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-20T13:08:14Z</published>
+    <arxiv:comment>40 pages, 5 figures</arxiv:comment>
+    <arxiv:primary_category term="hep-th"/>
+    <author>
+      <name>Kazunobu Maruyoshi</name>
+    </author>
+    <author>
+      <name>Toshihiro Ota</name>
+    </author>
+    <author>
+      <name>Masahito Yamazaki</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.28531v1</id>
+    <title>Towards differential expansion for generic representations</title>
+    <updated>2026-10-20T17:04:39Z</updated>
+    <link href="https://arxiv.org/abs/2610.28531v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.28531v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We report the first results of phenomenological analysis, based on extended set of explicitly calculated colored HOMFLY-PT polynomials in \cite{knotebook}. They concern differential expansion (DE), which separates the dependencies on the knot ${\cal K}$ and the representation $R$. %of colored HOMFLY-PT polynomials. DE is well understood for symmetric and rectangular representations, while for non-rectangular $R$ even the knot-independent basis $Z_R^X$ of DE is not known. We concentrate on two issues: the possible derivation of DE and on improved characteristic of its defect. We discuss how evolution families -- twist knots, double braids and 3-pretzels -- can be used to find DE by a peculiar triangular transformation of evolution coefficients. Once $Z^R_X$ are found for particular family, they are expected to stay basically the same for arbitrary knots -- modulo controllable reductions, characterized by the defect of DE, which puts knots into different universality classes. Contrary to original expectation, these classes appear labeled not by a single number $δ^{\cal K}$, but by a whole non-decreasing sequence $\{k_j\}$, which is squeezed between two staircases, ${\rm entier}\left(\frac{j-1}{δ+1}\right)\leq k_j\leq{\rm entier}\left(\frac{j-1}{{\rm deg}\,Δ}\right)$, where the upper bound involves Alexander polynomial $Δ(q^2)$ and follows from the continuation of the Melvin--Morton--Rozansky-Kashaev limit to $A=q^{-m}$ with $m&gt;0$, when the limit gives a {\it positive} power of Alexander. The old assumption $δ+1={\rm deg}\,Δ$ is oversimplified and fails for 19 non-alternating knots with 11 and 12 crossings. Last, we list the differences of non-rectangularly colored HOMFLY for various mutant pairs to demonstrate their universality (knot-independence) and nice consistency with the spirit of DE.</summary>
+    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.GT" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-20T17:04:39Z</published>
+    <arxiv:comment>13 pages</arxiv:comment>
+    <arxiv:primary_category term="hep-th"/>
+    <author>
+      <name>Ya. Kononov</name>
+    </author>
+    <author>
+      <name>A. Morozov</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.28516v1</id>
+    <title>Cosmological correlators from the Euclidean sphere</title>
+    <updated>2026-10-20T16:54:26Z</updated>
+    <link href="https://arxiv.org/abs/2610.28516v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.28516v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We propose a new framework for computing late-time cosmological correlators in de Sitter spacetime by analytic continuation from the Euclidean sphere. In this framework, correlators of arbitrary massive scalar fields take the universal form of generalized Euler integrals. Using this representation, we reproduce the results obtained using the Schwinger-Keldysh formalism for a range of tree-level and loop diagrams, providing nontrivial checks of the equivalence between the Euclidean and the in-in formalisms. We further show that a Landau analysis of the generalized Euler integrals determines the singularities of the corresponding correlators in momentum space. This framework provides a systematic approach to studying the analytic structure of cosmological correlators.</summary>
+    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="gr-qc" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-20T16:54:26Z</published>
+    <arxiv:comment>29 pages, 6 figures</arxiv:comment>
+    <arxiv:primary_category term="hep-th"/>
+    <author>
+      <name>Andrei Katsevich</name>
+    </author>
+    <author>
+      <name>Zimo Sun</name>
+    </author>
+  </entry>
+</feed>

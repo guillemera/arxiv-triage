@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.output/
+.wxt/
+*.log
+.DS_Store
+coverage/
+test-results/
+playwright-report/
+.env
+.env.*
+dist-e2e/
+dist-e2e-real/
+.cache/

@@ -1,0 +1,179 @@
+/* Shared styles for the popup and options page, in arXiv's own look. */
+
+:root {
+  --axt-red: #b31b1b;
+  --axt-border: #ddd;
+  --axt-muted: #666;
+  --axt-bg: #fff;
+  --axt-text: #000;
+  --axt-panel: #fafafa;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --axt-border: #3a3a3a;
+    --axt-muted: #a5a5a5;
+    --axt-bg: #1c1c1c;
+    --axt-text: #eee;
+    --axt-panel: #242424;
+    color-scheme: dark;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Layout rules like `.row { display: flex }` would otherwise override the hidden attribute. */
+[hidden] {
+  display: none !important;
+}
+
+body {
+  margin: 0;
+  background: var(--axt-bg);
+  color: var(--axt-text);
+  font: 13px/1.45 'Lucida Grande', helvetica, arial, verdana, sans-serif;
+}
+
+h1 {
+  margin: 0;
+  font-size: 15px;
+  color: var(--axt-red);
+}
+
+h2 {
+  font-size: 14px;
+  margin: 1.4em 0 0.5em;
+  padding-bottom: 0.2em;
+  border-bottom: 1px solid var(--axt-border);
+}
+
+label {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+input[type='range'],
+input[type='checkbox'] {
+  accent-color: var(--axt-red);
+}
+
+select,
+input,
+button,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.muted {
+  color: var(--axt-muted);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+  margin: 0.55em 0;
+}
+
+.row > button {
+  flex: none;
+  white-space: nowrap;
+}
+
+.row output {
+  font-variant-numeric: tabular-nums;
+  min-width: 3em;
+}
+
+.switch {
+  position: relative;
+  width: 34px;
+  height: 18px;
+  flex: none;
+}
+
+.switch input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.switch span {
+  position: absolute;
+  inset: 0;
+  border-radius: 9px;
+  background: #bbb;
+  transition: background 0.15s;
+  pointer-events: none;
+}
+
+.switch span::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #fff;
+  transition: transform 0.15s;
+}
+
+.switch input:checked + span {
+  background: var(--axt-red);
+}
+
+.switch input:checked + span::after {
+  transform: translateX(16px);
+}
+
+.switch input:focus-visible + span {
+  outline: 2px solid var(--axt-red);
+  outline-offset: 2px;
+}
+
+a {
+  color: LinkText;
+}
+
+kbd {
+  font: 11px/1 ui-monospace, monospace;
+  padding: 2px 4px;
+  border: 1px solid var(--axt-border);
+  border-radius: 3px;
+  background: var(--axt-panel);
+}
+
+.access-banner {
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+  margin: 0.6em 0;
+  padding: 0.5em 0.8em;
+  border: 1px solid #e0b252;
+  border-radius: 3px;
+  background: #fff8e5;
+  color: #6b4a00;
+}
+
+.access-banner button {
+  flex: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  .access-banner {
+    background: #3a2f12;
+    color: #f3d58b;
+    border-color: #8a6a1f;
+  }
+}

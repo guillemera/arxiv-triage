@@ -1,0 +1,413 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/GRqTPv9yDf5HutqHMz2KEfFKqus</id>
+  <title>arXiv Query: search_query=&amp;id_list=hep-th/9711200,hep-th/9802109,hep-th/9802150,hep-th/9802042,hep-th/9905111,hep-th/0209067,hep-th/0002230,hep-th/9804058,0807.3324,0712.2824,hep-th/0603001,1511.04085,1012.3982,hep-th/0301240&amp;start=0&amp;max_results=20</title>
+  <updated>2026-11-04T10:26:16Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=&amp;start=0&amp;max_results=20&amp;id_list=hep-th/9711200,hep-th/9802109,hep-th/9802150,hep-th/9802042,hep-th/9905111,hep-th/0209067,hep-th/0002230,hep-th/9804058,0807.3324,0712.2824,hep-th/0603001,1511.04085,1012.3982,hep-th/0301240" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>20</opensearch:itemsPerPage>
+  <opensearch:totalResults>14</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/hep-th/0603001v2</id>
+    <title>Holographic Derivation of Entanglement Entropy from AdS/CFT</title>
+    <updated>2006-03-07T19:21:09Z</updated>
+    <link href="https://arxiv.org/abs/hep-th/0603001v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/hep-th/0603001v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  A holographic derivation of the entanglement entropy in quantum (conformal) field theories is proposed from AdS/CFT correspondence. We argue that the entanglement entropy in d+1 dimensional conformal field theories can be obtained from the area of d dimensional minimal surfaces in AdS_{d+2}, analogous to the Bekenstein-Hawking formula for black hole entropy. We show that our proposal perfectly reproduces the correct entanglement entropy in 2D CFT when applied to AdS_3. We also compare the entropy computed in AdS_5 \times S^5 with that of the free N=4 super Yang-Mills.</summary>
+    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.str-el" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="gr-qc" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2006-02-28T21:29:24Z</published>
+    <arxiv:comment>5 pages, 3 figures, Revtex, references added</arxiv:comment>
+    <arxiv:primary_category term="hep-th"/>
+    <arxiv:journal_ref>Phys.Rev.Lett.96:181602,2006</arxiv:journal_ref>
+    <author>
+      <name>Shinsei Ryu</name>
+    </author>
+    <author>
+      <name>Tadashi Takayanagi</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevLett.96.181602</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevLett.96.181602" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/hep-th/9711200v3</id>
+    <title>The Large N Limit of Superconformal Field Theories and Supergravity</title>
+    <updated>1998-01-22T15:42:41Z</updated>
+    <link href="https://arxiv.org/abs/hep-th/9711200v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/hep-th/9711200v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  We show that the large $N$ limit of certain conformal field theories in various dimensions include in their Hilbert space a sector describing supergravity on the product of Anti-deSitter spacetimes, spheres and other compact manifolds. This is shown by taking some branes in the full M/string theory and then taking a low energy limit where the field theory on the brane decouples from the bulk. We observe that, in this limit, we can still trust the near horizon geometry for large $N$. The enhanced supersymmetries of the near horizon geometry correspond to the extra supersymmetry generators present in the superconformal group (as opposed to just the super-Poincare group). The 't Hooft limit of 4-d ${\cal N} =4$ super-Yang-Mills at the conformal point is shown to contain strings: they are IIB strings. We conjecture that compactifications of M/string theory on various Anti-deSitter spacetimes are dual to various conformal field theories. This leads to a new proposal for a definition of M-theory which could be extended to include five non-compact dimensions.</summary>
+    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
+    <published>1997-11-27T23:53:13Z</published>
+    <arxiv:comment>20 pages, harvmac, v2: section on AdS_2 corrected, references added, v3: More references and a sign in eqns 2.8 and 2.9 corrected</arxiv:comment>
+    <arxiv:primary_category term="hep-th"/>
+    <arxiv:journal_ref>Adv.Theor.Math.Phys.2:231-252,1998</arxiv:journal_ref>
+    <author>
+      <name>Juan M. Maldacena</name>
+    </author>
+    <arxiv:doi>10.1023/A:1026654312961</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1023/A:1026654312961" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1511.04085v2</id>
+    <title>Black hole microstates in AdS$_4$ from supersymmetric localization</title>
+    <updated>2016-02-17T15:25:18Z</updated>
+    <link href="https://arxiv.org/abs/1511.04085v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1511.04085v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This paper addresses a long standing problem, the counting of the microstates of supersymmetric asymptotically AdS black holes in terms of a holographically dual field theory. We focus on a class of asymptotically AdS$_4$ static black holes preserving two real supercharges which are dual to a topologically twisted deformation of the ABJM theory. We evaluate in the large $N$ limit the topologically twisted index of the ABJM theory and we show that it correctly reproduces the entropy of the AdS$_4$ black holes. An extremization of the index with respect to a set of chemical potentials is required. We interpret it as the selection of the exact R-symmetry of the superconformal quantum mechanics describing the horizon of the black hole.</summary>
+    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="gr-qc" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2015-11-12T21:00:08Z</published>
+    <arxiv:comment>35 pages + appendices, 4 figures; v2: refs added</arxiv:comment>
+    <arxiv:primary_category term="hep-th"/>
+    <arxiv:journal_ref>JHEP 1605 (2016) 054</arxiv:journal_ref>
+    <author>
+      <name>Francesco Benini</name>
+    </author>
+    <author>
+      <name>Kiril Hristov</name>
+    </author>
+    <author>
+      <name>Alberto Zaffaroni</name>
+    </author>
+    <arxiv:doi>10.1007/JHEP05(2016)054</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/JHEP05(2016)054" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/hep-th/9905111v3</id>
+    <title>Large N Field Theories, String Theory and Gravity</title>
+    <updated>1999-10-01T17:43:02Z</updated>
+    <link href="https://arxiv.org/abs/hep-th/9905111v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/hep-th/9905111v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  We review the holographic correspondence between field theories and string/M theory, focusing on the relation between compactifications of string/M theory on Anti-de Sitter spaces and conformal field theories. We review the background for this correspondence and discuss its motivations and the evidence for its correctness. We describe the main results that have been derived from the correspondence in the regime that the field theory is approximated by classical or semiclassical gravity. We focus on the case of the N=4 supersymmetric gauge theory in four dimensions, but we discuss also field theories in other dimensions, conformal and non-conformal, with or without supersymmetry, and in particular the relation to QCD. We also discuss some implications for black hole physics.</summary>
+    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="gr-qc" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="hep-lat" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="hep-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>1999-05-14T21:58:15Z</published>
+    <arxiv:comment>261 pages, 42 post-script figures. Please send any comment to jmaldac@fas.harvard.edu. v2: added references and small corrections. v3: minor changes and corrected discussion of SU(3)-invariant supergravity solution</arxiv:comment>
+    <arxiv:primary_category term="hep-th"/>
+    <arxiv:journal_ref>Phys.Rept.323:183-386,2000</arxiv:journal_ref>
+    <author>
+      <name>O. Aharony</name>
+    </author>
+    <author>
+      <name>S. S. Gubser</name>
+    </author>
+    <author>
+      <name>J. Maldacena</name>
+    </author>
+    <author>
+      <name>H. Ooguri</name>
+    </author>
+    <author>
+      <name>Y. Oz</name>
+    </author>
+    <arxiv:doi>10.1016/S0370-1573(99)00083-6</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/S0370-1573(99)00083-6" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/hep-th/9804058v2</id>
+    <title>Correlation functions in the CFT(d)/AdS(d+1) correpondence</title>
+    <updated>1998-09-25T02:34:23Z</updated>
+    <link href="https://arxiv.org/abs/hep-th/9804058v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/hep-th/9804058v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  Conformal techniques are applied to the calculation of integrals on AdS(d+1) space which define correlators of composite operators in the superconformal field theory on the d-dimensional boundary. The 3-point amplitudes for scalar fields of arbitrary mass and gauge fields in the AdS supergravity are calculated explicitly. For 3 gauge fields we compare in detail with the known conformal structure of the SU(4) flavor current correlator &lt;J_i^a J_j^b J_k^c&gt; of the N=4, d=4 SU(N) SYM theory. Results agree with the free field approximation as would be expected from superconformal non-renormalization theorems. In studying the Ward identity relating &lt;J_i^a O^I O^J&gt; to &lt;O^I O^J&gt; for (non-marginal) scalar composite operators O^I, we find that there is a subtlety in obtaining the normalization of &lt;O^I O^J&gt; from the supergravity action integral.</summary>
+    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
+    <published>1998-04-07T22:24:43Z</published>
+    <arxiv:comment>27 pages, LaTex, 1 eps figure, few misprints corrected, references added</arxiv:comment>
+    <arxiv:primary_category term="hep-th"/>
+    <arxiv:journal_ref>Nucl.Phys.B546:96-118,1999</arxiv:journal_ref>
+    <author>
+      <name>Daniel Z. Freedman</name>
+    </author>
+    <author>
+      <name>Samir D. Mathur</name>
+    </author>
+    <author>
+      <name>Alec Matusis</name>
+    </author>
+    <author>
+      <name>Leonardo Rastelli</name>
+    </author>
+    <arxiv:doi>10.1016/S0550-3213(99)00053-X</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/S0550-3213(99)00053-X" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/hep-th/0002230v3</id>
+    <title>Holographic Reconstruction of Spacetime and Renormalization in the AdS/CFT Correspondence</title>
+    <updated>2000-11-30T16:13:22Z</updated>
+    <link href="https://arxiv.org/abs/hep-th/0002230v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/hep-th/0002230v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  We develop a systematic method for renormalizing the AdS/CFT prescription for computing correlation functions. This involves regularizing the bulk on-shell supergravity action in a covariant way, computing all divergences, adding counterterms to cancel them and then removing the regulator. We explicitly work out the case of pure gravity up to six dimensions and of gravity coupled to scalars. The method can also be viewed as providing a holographic reconstruction of the bulk spacetime metric and of bulk fields on this spacetime, out of conformal field theory data. Knowing which sources are turned on is sufficient in order to obtain an asymptotic expansion of the bulk metric and of bulk fields near the boundary to high enough order so that all infrared divergences of the on-shell action are obtained. To continue the holographic reconstruction of the bulk fields one needs new CFT data: the expectation value of the dual operator. In particular, in order to obtain the bulk metric one needs to know the expectation value of stress-energy tensor of the boundary theory. We provide completely explicit formulae for the holographic stress-energy tensors up to six dimensions. We show that both the gravitational and matter conformal anomalies of the boundary theory are correctly reproduced. We also obtain the conformal transformation properties of the boundary stress-energy tensors.</summary>
+    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="gr-qc" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.DG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2000-02-28T20:37:57Z</published>
+    <arxiv:comment>27 pages,v2: typos corrected, two references added, to appear in CMP</arxiv:comment>
+    <arxiv:primary_category term="hep-th"/>
+    <arxiv:journal_ref>Commun.Math.Phys. 217 (2001) 595-622</arxiv:journal_ref>
+    <author>
+      <name>Sebastian de Haro</name>
+    </author>
+    <author>
+      <name>Kostas Skenderis</name>
+    </author>
+    <author>
+      <name>Sergey N. Solodukhin</name>
+    </author>
+    <arxiv:doi>10.1007/s002200100381</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s002200100381" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1012.3982v5</id>
+    <title>Review of AdS/CFT Integrability: An Overview</title>
+    <updated>2012-02-21T15:18:06Z</updated>
+    <link href="https://arxiv.org/abs/1012.3982v5" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1012.3982v5" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This is the introductory chapter of a review collection on integrability in the context of the AdS/CFT correspondence. In the collection we present an overview of the achievements and the status of this subject as of the year 2010.</summary>
+    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2010-12-17T20:58:01Z</published>
+    <arxiv:comment>31 pages, v2: reference added, references to other chapters updated, v3: footnote 1 on location of references added, v4: minor changes, references added, accepted for publication in Lett. Math. Phys, v5: minor corrections, links to chapters updated, attached IntAdS.pdf with all chapters in one file, see http://arxiv.org/src/1012.3982/anc/IntAdS.pdf or http://www.phys.ethz.ch/~nbeisert/IntAdS.pdf</arxiv:comment>
+    <arxiv:primary_category term="hep-th"/>
+    <arxiv:journal_ref>Lett. Math. Phys. 99, 3 (2012)</arxiv:journal_ref>
+    <author>
+      <name>Niklas Beisert</name>
+    </author>
+    <author>
+      <name>Changrim Ahn</name>
+    </author>
+    <author>
+      <name>Luis F. Alday</name>
+    </author>
+    <author>
+      <name>Zoltan Bajnok</name>
+    </author>
+    <author>
+      <name>James M. Drummond</name>
+    </author>
+    <author>
+      <name>Lisa Freyhult</name>
+    </author>
+    <author>
+      <name>Nikolay Gromov</name>
+    </author>
+    <author>
+      <name>Romuald A. Janik</name>
+    </author>
+    <author>
+      <name>Vladimir Kazakov</name>
+    </author>
+    <author>
+      <name>Thomas Klose</name>
+    </author>
+    <author>
+      <name>Gregory P. Korchemsky</name>
+    </author>
+    <author>
+      <name>Charlotte Kristjansen</name>
+    </author>
+    <author>
+      <name>Marc Magro</name>
+    </author>
+    <author>
+      <name>Tristan McLoughlin</name>
+    </author>
+    <author>
+      <name>Joseph A. Minahan</name>
+    </author>
+    <author>
+      <name>Rafael I. Nepomechie</name>
+    </author>
+    <author>
+      <name>Adam Rej</name>
+    </author>
+    <author>
+      <name>Radu Roiban</name>
+    </author>
+    <author>
+      <name>Sakura Schafer-Nameki</name>
+    </author>
+    <author>
+      <name>Christoph Sieg</name>
+    </author>
+    <author>
+      <name>Matthias Staudacher</name>
+    </author>
+    <author>
+      <name>Alessandro Torrielli</name>
+    </author>
+    <author>
+      <name>Arkady A. Tseytlin</name>
+    </author>
+    <author>
+      <name>Pedro Vieira</name>
+    </author>
+    <author>
+      <name>Dmytro Volin</name>
+    </author>
+    <author>
+      <name>Konstantinos Zoubos</name>
+    </author>
+    <arxiv:doi>10.1007/s11005-011-0529-2</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s11005-011-0529-2" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/hep-th/9802042v3</id>
+    <title>Supergravity and The Large N Limit of Theories With Sixteen Supercharges</title>
+    <updated>2000-09-26T12:33:30Z</updated>
+    <link href="https://arxiv.org/abs/hep-th/9802042v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/hep-th/9802042v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  We consider field theories with sixteen supersymmetries, which includes U(N) Yang-Mills theories in various dimensions, and argue that their large N limit is related to certain supergravity solutions. We study this by considering a system of D-branes in string theory and then taking a limit where the brane worldvolume theory decouples from gravity. At the same time we study the corresponding D-brane supergravity solution and argue that we can trust it in certain regions where the curvature (and the effective string coupling, where appropriate) are small. The supergravity solutions typically have several weakly coupled regions and interpolate between different limits of string-M-theory.</summary>
+    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
+    <published>1998-02-07T00:31:26Z</published>
+    <arxiv:comment>24 pages, latex. v2: reference added, v3: typos corrected</arxiv:comment>
+    <arxiv:primary_category term="hep-th"/>
+    <arxiv:journal_ref>Phys. Rev. D 58, 046004 (1998)</arxiv:journal_ref>
+    <author>
+      <name>Nissan Itzhaki</name>
+    </author>
+    <author>
+      <name>Juan M. Maldacena</name>
+    </author>
+    <author>
+      <name>Jacob Sonnenschein</name>
+    </author>
+    <author>
+      <name>Shimon Yankielowicz</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevD.58.046004</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevD.58.046004" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/hep-th/0209067v2</id>
+    <title>Lecture Notes on Holographic Renormalization</title>
+    <updated>2002-10-11T03:34:36Z</updated>
+    <link href="https://arxiv.org/abs/hep-th/0209067v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/hep-th/0209067v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  We review the formalism of holographic renormalization. We start by discussing mathematical results on asymptotically anti-de Sitter spacetimes. We then outline the general method of holographic renormalization. The method is illustrated by working all details in a simple example: a massive scalar field on anti-de Sitter spacetime. The discussion includes the derivation of the on-shell renormalized action, of holographic Ward identities, anomalies and RG equations, and the computation of renormalized one-, two- and four-point functions. We then discuss the application of the method to holographic RG flows. We also show that the results of the near-boundary analysis of asymptotically AdS spacetimes can be analytically continued to apply to asymptotically de Sitter spacetimes. In particular, it is shown that the Brown-York stress energy tensor of de Sitter spacetime is equal, up to a dimension dependent sign, to the Brown-York stress energy tensor of an associated AdS spacetime.</summary>
+    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2002-09-09T13:31:06Z</published>
+    <arxiv:comment>43 pages; typos corrected, references added</arxiv:comment>
+    <arxiv:primary_category term="hep-th"/>
+    <arxiv:journal_ref>Class.Quant.Grav.19:5849-5876,2002</arxiv:journal_ref>
+    <author>
+      <name>Kostas Skenderis</name>
+    </author>
+    <arxiv:doi>10.1088/0264-9381/19/22/306</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1088/0264-9381/19/22/306" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/0712.2824v3</id>
+    <title>Localization of gauge theory on a four-sphere and supersymmetric Wilson loops</title>
+    <updated>2012-09-20T05:34:12Z</updated>
+    <link href="https://arxiv.org/abs/0712.2824v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/0712.2824v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We prove conjecture due to Erickson-Semenoff-Zarembo and Drukker-Gross which relates supersymmetric circular Wilson loop operators in the N=4 supersymmetric Yang-Mills theory with a Gaussian matrix model. We also compute the partition function and give a new matrix model formula for the expectation value of a supersymmetric circular Wilson loop operator for the pure N=2 and the N=2* supersymmetric Yang-Mills theory on a four-sphere. A four-dimensional N=2 superconformal gauge theory is treated similarly.</summary>
+    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2007-12-17T21:12:42Z</published>
+    <arxiv:comment>63 pages, 1 figure; v2: correction of mass parameter; v3: typos corrected</arxiv:comment>
+    <arxiv:primary_category term="hep-th"/>
+    <arxiv:journal_ref>Commun.Math.Phys. 313 (2012) 71-129</arxiv:journal_ref>
+    <author>
+      <name>Vasily Pestun</name>
+    </author>
+    <arxiv:doi>10.1007/s00220-012-1485-0</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s00220-012-1485-0" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/hep-th/0301240v2</id>
+    <title>de Sitter Vacua in String Theory</title>
+    <updated>2003-02-10T07:20:29Z</updated>
+    <link href="https://arxiv.org/abs/hep-th/0301240v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/hep-th/0301240v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  We outline the construction of metastable de Sitter vacua of type IIB string theory. Our starting point is highly warped IIB compactifications with nontrivial NS and RR three-form fluxes. By incorporating known corrections to the superpotential from Euclidean D-brane instantons or gaugino condensation, one can make models with all moduli fixed, yielding a supersymmetric AdS vacuum. Inclusion of a small number of anti-D3 branes in the resulting warped geometry allows one to uplift the AdS minimum and make it a metastable de Sitter ground state. The lifetime of our metastable de Sitter vacua is much greater than the cosmological timescale of 10^10 years. We also prove, under certain conditions, that the lifetime of dS space in string theory will always be shorter than the recurrence time.</summary>
+    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="astro-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="gr-qc" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="hep-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2003-01-29T19:56:32Z</published>
+    <arxiv:comment>12 pages, 2 figs, added comments on the thin wall approximation to tunneling</arxiv:comment>
+    <arxiv:primary_category term="hep-th"/>
+    <arxiv:journal_ref>Phys.Rev.D68:046005,2003</arxiv:journal_ref>
+    <author>
+      <name>Shamit Kachru</name>
+    </author>
+    <author>
+      <name>Renata Kallosh</name>
+    </author>
+    <author>
+      <name>Andrei Linde</name>
+    </author>
+    <author>
+      <name>Sandip P. Trivedi</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevD.68.046005</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevD.68.046005" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/0807.3324v2</id>
+    <title>Precision holography for non-conformal branes</title>
+    <updated>2008-10-02T14:47:21Z</updated>
+    <link href="https://arxiv.org/abs/0807.3324v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/0807.3324v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  We set up precision holography for the non-conformal branes preserving 16 supersymmetries. The near-horizon limit of all such p-brane solutions with p \leq 4, including the case of fundamental string solutions, is conformal to AdS_{p+2} x S^{8-p} with a linear dilaton. We develop holographic renormalization for all these cases. In particular, we obtain the most general asymptotic solutions with appropriate Dirichlet boundary conditions, find the corresponding counterterms and compute the holographic 1-point functions, all in complete generality and at the full non-linear level. The result for the stress energy tensor properly defines the notion of mass for backgrounds with such asymptotics. The analysis is done both in the original formulation of the method and also using a radial Hamiltonian analysis. The latter formulation exhibits most clearly the existence of an underlying generalized conformal structure. In the cases of Dp-branes, the corresponding dual boundary theory, the maximally supersymmetric Yang-Mills theory SYM_{p+1}, indeed exhibits the generalized conformal structure found at strong coupling. We compute the holographic 2-point functions of the stress energy tensor and gluon operator and show they satisfy the expected Ward identities and the constraints of generalized conformal structure. The holographic results are also manifestly compatible with the M-theory uplift, with the asymptotic solutions, counterterms, one and two point functions etc of the IIA F1 and D4 appropriately descending from those of M2 and M5 branes, respectively. We present a few applications including the computation of condensates in Witten's model of holographic YM_4 theory.</summary>
+    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2008-07-21T19:01:30Z</published>
+    <arxiv:comment>82 pages; v2: references added and typos fixed</arxiv:comment>
+    <arxiv:primary_category term="hep-th"/>
+    <arxiv:journal_ref>JHEP 09 (2008) 094</arxiv:journal_ref>
+    <author>
+      <name>Ingmar Kanitscheider</name>
+    </author>
+    <author>
+      <name>Kostas Skenderis</name>
+    </author>
+    <author>
+      <name>Marika Taylor</name>
+    </author>
+    <arxiv:doi>10.1088/1126-6708/2008/09/094</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1088/1126-6708/2008/09/094" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/hep-th/9802109v2</id>
+    <title>Gauge Theory Correlators from Non-Critical String Theory</title>
+    <updated>1998-03-27T22:25:16Z</updated>
+    <link href="https://arxiv.org/abs/hep-th/9802109v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/hep-th/9802109v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  We suggest a means of obtaining certain Green's functions in 3+1-dimensional ${\cal N} = 4$ supersymmetric Yang-Mills theory with a large number of colors via non-critical string theory. The non-critical string theory is related to critical string theory in anti-deSitter background. We introduce a boundary of the anti-deSitter space analogous to a cut-off on the Liouville coordinate of the two-dimensional string theory. Correlation functions of operators in the gauge theory are related to the dependence of the supergravity action on the boundary conditions. From the quadratic terms in supergravity we read off the anomalous dimensions. For operators that couple to massless string states it has been established through absorption calculations that the anomalous dimensions vanish, and we rederive this result. The operators that couple to massive string states at level $n$ acquire anomalous dimensions that grow as $2\left (n g_{YM} \sqrt {2 N} )^{1/2}$ for large `t Hooft coupling. This is a new prediction about the strong coupling behavior of large $N$ SYM theory.</summary>
+    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
+    <published>1998-02-16T18:38:17Z</published>
+    <arxiv:comment>15 pages, harvmac with btxmac; minor revisions, 1 reference added, the version to appear in Physics Letters B</arxiv:comment>
+    <arxiv:primary_category term="hep-th"/>
+    <arxiv:journal_ref>Phys.Lett.B428:105-114,1998</arxiv:journal_ref>
+    <author>
+      <name>S. S. Gubser</name>
+    </author>
+    <author>
+      <name>I. R. Klebanov</name>
+    </author>
+    <author>
+      <name>A. M. Polyakov</name>
+    </author>
+    <arxiv:doi>10.1016/S0370-2693(98)00377-3</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/S0370-2693(98)00377-3" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/hep-th/9802150v2</id>
+    <title>Anti De Sitter Space And Holography</title>
+    <updated>1998-04-06T20:45:58Z</updated>
+    <link href="https://arxiv.org/abs/hep-th/9802150v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/hep-th/9802150v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  Recently, it has been proposed by Maldacena that large $N$ limits of certain conformal field theories in $d$ dimensions can be described in terms of supergravity (and string theory) on the product of $d+1$-dimensional $AdS$ space with a compact manifold. Here we elaborate on this idea and propose a precise correspondence between conformal field theory observables and those of supergravity: correlation functions in conformal field theory are given by the dependence of the supergravity action on the asymptotic behavior at infinity. In particular, dimensions of operators in conformal field theory are given by masses of particles in supergravity. As quantitative confirmation of this correspondence, we note that the Kaluza-Klein modes of Type IIB supergravity on $AdS_5\times {\bf S}^5$ match with the chiral operators of $\N=4$ super Yang-Mills theory in four dimensions. With some further assumptions, one can deduce a Hamiltonian version of the correspondence and show that the $\N=4$ theory has a large $N$ phase transition related to the thermodynamics of $AdS$ black holes.</summary>
+    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
+    <published>1998-02-20T22:41:01Z</published>
+    <arxiv:comment>40 pp.; additional references and assorted corrections</arxiv:comment>
+    <arxiv:primary_category term="hep-th"/>
+    <arxiv:journal_ref>Adv.Theor.Math.Phys.2:253-291,1998</arxiv:journal_ref>
+    <author>
+      <name>Edward Witten</name>
+    </author>
+  </entry>
+</feed>
